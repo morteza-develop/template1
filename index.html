@@ -30,13 +30,13 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">service</a>
+                            <a class="nav-link" href="#servicediv">service</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">price</a>
+                            <a class="nav-link" href="#pricingdiv">price</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
+                            <a class="nav-link" href="#contactid">contact</a>
                         </li>
                     </ul>
                 </div>
@@ -403,7 +403,62 @@
     </section>
     <!-- ********** newslatter ********** -->
 
-    
+    <!-- ********** footer ********** -->
+
+    <footer class="footersection" id="footerdiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 footer-div">
+                    <div>
+                        <h4>ABOUT M-DEVELOP</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 footer-div text-center">
+                    <div>
+                        <h4>NAVIGATION LINKS</h4>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Price</a></li>
+                        <li><a href="#">About</a></li>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12 footer-div">
+                    <div>
+                        <h4>NEWSLETTER</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <div class="container newletter-mian">
+                            <div class="row">
+                                <div class="col-lg-12 col-12">
+                                    <form action="">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control news-input" placeholder="Your Email">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Subscribes</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center">
+                <p>copyright <i class="fa fa-copyright" aria-hidden="true" style="color:#fff;"></i> 2020 all right reserved | this template is made with by M-DEVELOP (morteza set)</p>
+            </div>
+            <div class="scrolltop float-right">
+                <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- ********** footer ********** -->
+
+
 
 
 
@@ -424,6 +479,25 @@
             delay: 10,
             time: 3000
         })
+
+
+        myButton = document.getElementById("myBtn");
+        window.onscroll = function(){scrollFunction()};
+
+        function scrollFunction(){
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop >20 ){
+                myButton.style.display = "block";
+            }
+            else{
+                myButton.style.display = "none";
+            }
+        }
+
+
+        function topFunction(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 
