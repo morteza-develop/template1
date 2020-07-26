@@ -355,3 +355,27 @@ form:hover .form-button button{
     font-size: 0.85rem;
 }
 /* ********** contact us ********** */
+
+/* ********** news letter ********** */
+
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+.news-input{
+    border-radius: 100px 0px 0px 100px !important;
+    min-width: 150px;
+    min-height: 45px;
+}
+.input-group-text{
+    color: #fff !important;
+    background: #5bc0de !important;
+    border-radius: 0 100px 100px 0 !important;
+    min-width: 120px;
+    min-height: 45px;
+}
+
+
+
+/* ********** news letter ********** */
